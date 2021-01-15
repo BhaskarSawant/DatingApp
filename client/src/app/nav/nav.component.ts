@@ -12,7 +12,7 @@ import { AccountService } from '../_services/account.service';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent implements OnInit {
-  model: any = {}
+  model: any = {}  
 
 
 
