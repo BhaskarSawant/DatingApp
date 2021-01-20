@@ -39,7 +39,7 @@ export class UserManagementComponent implements OnInit {
       const rolesToUpdate = {
         roles: [...values.filter(el => el.checked == true).map(el => el.name)]
       };
-      if(rolesToUpdate) {
+      if (rolesToUpdate) {
         this.adminService.updateUserRoles(user.username, rolesToUpdate.roles).subscribe(() => {
           user.roles = [...rolesToUpdate.roles]
         })
